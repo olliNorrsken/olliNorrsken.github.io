@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'TT Lakes';
+    src: url('../fonts/TTLakes-Regular.eot');
+    src: local('TT Lakes Regular'), local('TTLakes-Regular'),
+        url('../fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TTLakes-Regular.woff') format('woff'),
+        url('../fonts/TTLakes-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+/*body{
+    min-width: 320px;
+    overflow-x: hidden;
+ }*/   
+
+ .container{
+    padding: 0 16px;
+ }
+
+ .header{
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D9FFF5;
+
+    .header__wrapper{
+        min-height: 88px;
+        display: flex;
+        align-items: center;
+    }
+ }
+ .burger{
+    margin-left: 0px;
+ }
+ .logo,.repair,.check{
+    margin-left: 18px;
+ }
+ .divider-320{
+    margin-left: 16px;
+ }
+ 
+
+ .divider-768,.header__menu{
+    display: none;
+ }
+
+ .header__button{
+    width: 40px;
+    height: 40px;
+ }
+
+.services{
+    background-color: #f8f8f8;
+    min-height: 509px;
+    font-family: "TT Lakes";
+    .services__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 24px;
+    }
+}
+
+.services__menu{
+    display: none;
+}
+
+.highlight{
+    width: 4px;
+    height: 40px; 
+}
+
+.services__title{
+    margin: 0;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 40px;
+    padding-left: 12px;
+}    
+
+.slide-menu{
+    padding: 16px;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+}
+.slide-menu::-webkit-scrollbar{
+    display: none;
+}
+
+.slide-menu__item{
+    color: #7E7E82;
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+}
+.slide-menu__item:hover{
+    border-radius: 5px;
+    border: solid 2px #88FFEC;
+    background-color: #FFFFFF;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+}
+.article__paragraph{
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #1B1C21;
+}
+.article__text{
+    padding: 0 16px;
+}
+
+.paragraph2{
+    display: none;
+}
+
+.read-more{
+    padding-left: 10px;
+}
+
+.services img{
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .burger{
+        margin-left: 8px;
+    }
+    .divider-768{
+        display: flex;
+        margin-left: 20px;
+    }
+    .logo{
+        margin-left: 20px;
+    }
+    .header__menu{
+        margin-left: 250px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .divider-320{
+        margin-left: 20px;
+    }
+    .repair{
+        margin-left: 20px;
+    }
+    .check{
+        margin-left: 20px;
+    }
+    .slide-menu{
+        padding-bottom: 0px;
+    }
+    .article{
+        flex-direction: row;
+    }
+    .article__text{
+        width: 326px;
+        margin: 22px 25px 10px 9px;
+    }
+    .paragraph2{
+        display: block;
+    }
+    .paragraph2__end{
+        display: none;
+    }
+    .img-logo{
+        width: 360px;
+        height: 208px;
+        object-fit: contain;
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+}
+
+@media (min-width: 1120px){
+
+    .header{
+        display: none;
+    }
+    .services{
+        padding: 16px 0;
+    }
+    .services__menu{
+        display: flex;
+        align-items: center;
+        margin-left: 450px;
+        gap: 20px;
+    }
+    .services__span{
+        font-weight: 600;
+    }
+    .slide-menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .slide-menu__item{
+        padding: 0 12px;
+    }
+    /*.article{
+        max-height: 370px;
+        max-width: 540px;
+    }*/
+    .img-logo {
+        margin-top: 40px;
+        width: 532px;
+        height: 307px;
+        object-fit: cover;
+    }
+    .article__text{
+        width: 490px;
+    }
+    .article__paragraph{
+        line-height: 20px;
+        width: 490px;
+        margin-top: 25px;
+    }
+    .paragraph2__end{
+        display: inline;
+        white-space: pre-line;
+    }
+   
+}
